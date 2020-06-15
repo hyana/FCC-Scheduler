@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--connect css to html-->
+  <link rel ="stylesheet" type="text/css" href="style.css">
+  <meta name ="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    body{font-family: Arial, Arial, Helvetica, sans-serif;
+    margin: 0;}
+    *{box-sizing: border-box;}
+  </style>
+  <title> Five College Consortium Scheduler </title>
+</head>
+<body>
+  <!--connect js to html-->
+  <script src ="index.js"></script>
+  <h1>Five College Consortium Scheduler</h1>
+  <!-- tab links -->
+  <div class = "tab">
+    <button class ="tablinks" onclick="openTab(event, 'Scheduler')" id = "defaultOpen">Scheduler</button>
+    <script>
+      document.getElementById("defaultOpen").click()
+    </script>
+    <button class ="tablinks" onclick="openTab(event, 'Search')">Search</button>
+  </div>
+
+  <!--Scheduler tab content -->
+  <div id ="Scheduler" class ="tabcontent">
+    <h3>Scheduler</h3>
+    <table border="3" cellspacing="3" align ="center">
+      <tr>
+        <td align = "center">
+        <td> Monday
+        <td> Tuesday
+        <td> Wednesday
+        <td> Thursday
+        <td> Friday
+      </tr>
+      <tr>
+        <td align = "center"> 8am
+        <td align = "center"> 9am
+      </tr>
+    </table>
+
+  <!-- Search Tab content-->
+  </div>
+  <div id ="Search" class ="tabcontent">
+    <h3>Search Courses</h3>
+      <div class = "topnav">
+        <form action = "/phpinfo.php">
+          <input type= "text" placeholder = "Course Name...">
+          <button type = "submit">Submit</button>
+        </form>
+      </div>
+  </div>
+</body>
+</html>
