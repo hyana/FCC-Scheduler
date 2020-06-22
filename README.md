@@ -37,10 +37,11 @@ For more specific information about each function, please refer to the inline co
 * Make a visually interactive scheduler like Coursicle
 * Add Mount Holyoke College
 
-# Description about dummy_files, crawled_data, crawling folders
+# References 
+
+## Description about dummy_files, crawled_data, crawling folders
 * crawling: I crawled course information from the official five college consortium website: colleges.edu/academics/courses using crawling.py. Then I converted csv files(crawled_data) to html files(table feature) using csv_to_html.py
 * crawled_data: csv files and html files that I used to get <table> results of course information
 * dummy_files: files will be used in the future
 
-# References 
 
