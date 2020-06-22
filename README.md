@@ -3,6 +3,12 @@
 * Two js files: jquery-3.5.1.min.js, index.js
 * One css files: style.css
 
+## Description about dummy_files, crawled_data, crawling folders
+* crawling: I crawled course information from the official five college consortium website: colleges.edu/academics/courses using crawling.py. Then I converted csv files(crawled_data) to html files(table feature) using csv_to_html.py
+* crawled.data: csv files and html files that I used to get <table> results of course information
+* dummy_files: files will be used in the future
+
+
 ## Explanation of how to open final.html
 1. Download "final.htm", "jquery-3.5.1.min.js", and "index.js". Make sure that they are all in the same directory
 2. Open "final.htm" with Chrome or other Internet browsers(I personally recommend Chrome)
