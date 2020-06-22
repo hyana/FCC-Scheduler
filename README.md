@@ -1,19 +1,13 @@
-## ---------------------------------------------------------------------------------------
-##         Name: Seohyeon "Hyana" Kang
-## Project Name: Five College Consortium Interactive Scheduler
-##         Date: 06/22/2020
-##   References: See the last part of this file
-## ---------------------------------------------------------------------------------------
-
 # Files needed
-1. One main html file: final.htm
-2. Two js files: jquery-3.5.1.min.js, index.js
-3. One css files: style.css
+* One main html file: final.htm
+* Two js files: jquery-3.5.1.min.js, index.js
+* One css files: style.css
 
 # Description about dummy_files, crawled_data, crawling folders
-1. crawling: I crawled course information from the official five college consortium website: colleges.edu/academics/courses using crawling.py. Then I converted csv files(crawled_data) to html files(table feature) using csv_to_html.py
-2. crawled.data: csv files and html files that I used to get <table> results of course information
-3. dummy_files: files will be used in the future
+* crawling: I crawled course information from the official five college consortium website: colleges.edu/academics/courses using crawling.py. Then I converted csv files(crawled_data) to html files(table feature) using csv_to_html.py
+* crawled.data: csv files and html files that I used to get <table> results of course information
+* dummy_files: files will be used in the future
+
 
 # Explanation of how to open final.html
 1. Download "final.htm", "jquery-3.5.1.min.js", and "index.js". Make sure that they are all in the same directory
@@ -39,15 +33,15 @@ So I'm developing this Five College Consortium Interactive Scheduler for letting
 
 # Architecture of the code
 I used Pandas, BeautifulSoup, jQuery for better performance
-For more specific information about each function, please refer to the inline comments in each file.
+For more specific information about each function, please refer to the inline comments in each file.  
 
 # Remaining Challenges:
-1. Loading Time for UMass courses
-2. How to export the result from search tab to schedule tab
-3. Import each course's credits from five college consortium website 
-4. Parse time and days from date
-5. Make a visually interactive scheduler like Coursicle
-6. Add Mount Holyoke College
+* Loading Time for UMass courses
+* How to export the result from search tab to schedule tab
+* Import each course's credits from five college consortium website 
+* Parse time and days from date
+* Make a visually interactive scheduler like Coursicle
+* Add Mount Holyoke College
 
 # References 
 
