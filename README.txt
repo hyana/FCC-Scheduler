@@ -5,7 +5,6 @@
 ##   References: See the last part of this file
 ## ---------------------------------------------------------------------------------------
 
-
 ## Files needed
 1. One main html file: final.htm
 2. Two js files: jquery-3.5.1.min.js, index.js
@@ -29,6 +28,7 @@
 8. Click "Submit" button on the top if you choose all the courses you want to take
 9. New window will pop up and show the courses that you selected and their information in table feature 
 
+
 ## Purpose of this website
 College students in the past days used to use freecollegeschedulermaker.com to make their visual course scheduler.
 But this website was somewhat annoying to make a course schedule since its users are required to input all the information about each course(course title, days, times, instructor, location, etc)
@@ -51,4 +51,5 @@ For more specific information about each function, please refer to the inline co
 5. Make a visually interactive scheduler like Coursicle
 6. Add Mount Holyoke College
 
-## References for soundeffects and and the script
+## References 
+
