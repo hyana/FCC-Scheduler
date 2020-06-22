@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <script src="jquery-3.5.1.min.js"></script>
   <!--connect css to html-->
   <link rel ="stylesheet" type="text/css" href="style.css">
   <meta name ="viewport" content="width=device-width,initial-scale=1">
@@ -28,17 +29,16 @@
   <div id ="Scheduler" class ="tabcontent">
     <h3>Scheduler</h3>
     <table border="3" cellspacing="3" align ="center">
-      <tr>
-        <td align = "center">
-        <td> Monday
-        <td> Tuesday
-        <td> Wednesday
-        <td> Thursday
-        <td> Friday
-      </tr>
-      <tr>
-        <td align = "center"> 8am
-        <td align = "center"> 9am
+      <thead>
+        <th align = "center">
+        <th scope = "col"> Monday </th>
+        <th scope = "col"> Tuesday </th>
+        <th scope = "col"> Wednesday </th>
+        <th scope = "col"> Thursday</th>
+        <th scope = "col"> Friday</th>
+      </thead>
+      <tr>  
+        <td data-cell></td>
       </tr>
     </table>
 

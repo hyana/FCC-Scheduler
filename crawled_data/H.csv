@@ -1,0 +1,97 @@
+Institution,Subject,Name,Type,Number,Section,Instructor,Date
+Hampshire,CS,Philosophy of Language,Lect,140,1,Daniel Altshuler,02:30PM-03:50PM TU;02:30PM-03:50PM TH
+Hampshire,CS,Introduction to Game Design,Lect,144,1,Jennifer Gutterman,04:00PM-05:20PM M;04:00PM-05:20PM W
+Hampshire,CS,2D Motion Graphics Animation,Lect,147,1,William Colon,09:00AM-10:20AM M;09:00AM-10:20AM W
+Hampshire,CS,How People Learn,Lect,208,1,Laura Wenk,02:30PM-03:50PM TU;02:30PM-03:50PM TH
+Hampshire,CS,Animal Behavior,Lect,220,1,Laela Sayigh,02:30PM-05:20PM W
+Hampshire,CS,Youth Change Makers,Lect,268,1,Laura Wenk,01:00PM-02:20PM W;01:00PM-02:20PM F
+Hampshire,CS,World Building,Lect,270,1,Jennifer Gutterman,05:30PM-06:50PM M;05:30PM-06:50PM W
+Hampshire,CS,Animation & Freelancing,Lect,303,1,William Colon,05:30PM-06:50PM TU;05:30PM-06:50PM TH
+Hampshire,CS,Logic of Change,Lect,399,1,Daniel Altshuler,02:30PM-05:20PM W
+Hampshire,CSI,Introduction to Writing,Lect,103,1,William Ryan,01:00PM-02:20PM W;01:00PM-02:20PM F
+Hampshire,CSI,Ethics and the Common Good,Lect,147,1,George Fourlas,10:30AM-11:50AM TU;10:30AM-11:50AM TH
+Hampshire,CSI,Debates in History,Lect,155,1,James Wald,09:00AM-10:20AM W;09:00AM-10:20AM F
+Hampshire,CSI,West African Dance History,Lect,181,1,Amy Jordan,01:00PM-02:20PM TU;01:00PM-02:20PM TH;06:00PM-08:00PM TU
+Hampshire,CSI,African American Labor History,Lect,228,1,Amy Jordan,10:30AM-11:50AM TU;10:30AM-11:50AM TH
+Hampshire,CSI,Marx and Critical Theory,Lect,251,1,George Fourlas,01:00PM-03:50PM W
+Hampshire,CSI,Beyond the Bomb,Lect,254,1,Anne Hendrixson,01:00PM-03:50PM M
+Hampshire,CSI,Ethnographic Research Methods,Lect,258,1,Roosbelinda Cardenas,01:00PM-03:50PM TH
+Hampshire,CSI,Ruins and Reconstructions,Lect,269,1,Rachel Engmann,04:00PM-07:00PM M
+Hampshire,CSI,Creating Families,Lect,271,1,Marlene Fried;Pamela Stone,01:00PM-02:20PM TU;01:00PM-02:20PM TH
+Hampshire,CSI,Writing Others/Ourselves,Lect,305,1,Rachel Engmann,01:00PM-03:50PM M
+Hampshire,CSI,Seminar on 20TH-CENTURY Europe,Lect,308,1,James Wald,02:30PM-05:20PM W
+Hampshire,HACU,Nonfiction Film,Lect,107,1,Abraham Ravett,01:00PM-03:50PM M;07:00PM-09:00PM M
+Hampshire,HACU,Boring Pictures,Lect,115,1,Billie Mandle,01:00PM-03:50PM M
+Hampshire,HACU,Intro to Studio Art Practices,Lect,120,1,Serena Aurora Himmelfarb,01:00PM-03:50PM TU;01:00PM-03:50PM TH
+Hampshire,HACU,Japanese Cinema,Lect,123,1,Abraham Ravett,01:00PM-03:50PM W;07:00PM-09:00PM W
+Hampshire,HACU,"Moving, Making, Meaning",Lect,145,1,Deborah Goffe,01:00PM-02:20PM M;01:00PM-02:20PM W
+Hampshire,HACU,Urban Imagination-Lit & Film,Lect,166,1,Jennifer Bajorek,04:00PM-05:20PM M;04:00PM-05:20PM W
+Hampshire,HACU,Singing in Japanese,Lect,189,1,Junko Oba,04:00PM-05:20PM M;04:00PM-05:20PM W
+Hampshire,HACU,Modernity and the Avant-Gardes,Lect,197,1,Karen Koehler,01:00PM-02:20PM M;01:00PM-02:20PM W
+Hampshire,HACU,The Question of Evil,Lect,199,1,Jeffrey Wallen,01:00PM-02:20PM TU;01:00PM-02:20PM TH
+Hampshire,HACU,Exploring Electronica,Lect,201,1,Daniel Warner,01:00PM-02:20PM M;01:00PM-02:20PM W
+Hampshire,HACU,American Strings,Lect,205,1,Rebecca (Becky ) Miller,02:30PM-03:50PM TU;02:30PM-03:50PM TH
+Hampshire,HACU,"Fiction, Politics, Philosophy",Lect,241,1,Monique Roelofs,10:30AM-11:50AM TU;10:30AM-11:50AM TH
+Hampshire,HACU,Sample! Remix! Mash!,Lect,242,1,Professor Loza,10:30AM-11:50AM TU;10:30AM-11:50AM TH
+Hampshire,HACU,Angels and Ghosts,Lect,255,1,Karen Koehler,06:00PM-09:00PM W
+Hampshire,HACU,Ancient Epic 1,Lect,256,1,Robert Meagher,10:30AM-11:50AM TU;10:30AM-11:50AM TH
+Hampshire,HACU,Making Media for Democracy,Lect,257,1,Hope Tucker,10:00AM-11:50AM F;01:00PM-03:00PM F
+Hampshire,HACU,Digital Architecture Studio,Lect,263,1,Thomas Long,01:00PM-03:50PM M;01:00PM-03:50PM W
+Hampshire,HACU,Encapsulating Sounds,Lect,265,1,Junko Oba,10:30AM-11:50AM M;10:30AM-11:50AM W
+Hampshire,HACU,Company Class,Lect,266,1,Deborah Goffe,10:30AM-11:50AM M;10:30AM-11:50AM W
+Hampshire,HACU,Paper and Pixels,Lect,270,1,Billie Mandle,09:00AM-11:50AM W
+Hampshire,HACU,Planet on Fire,Lect,271,1,Jennifer Bajorek,02:30PM-03:50PM M;02:30PM-03:50PM W
+Hampshire,HACU,Camus,Lect,273,1,Robert Meagher,02:30PM-03:50PM TU;02:30PM-03:50PM TH
+Hampshire,HACU,"Cuba: Nation, Race, Revolution",Lect,274,1,Michele Hardesty,01:00PM-02:20PM M;01:00PM-02:20PM W
+Hampshire,HACU,Electroacoustic Music,Lect,290,1,Daniel Warner,01:00PM-02:20PM TU;01:00PM-02:20PM TH
+Hampshire,HACU,"Power, Collectivity, Freedom",Lect,302,1,Monique Roelofs,06:00PM-08:50PM TU
+Hampshire,HACU,Div III Film Video Production,Lect,310,1,Hope Tucker,01:00PM-05:00PM W
+Hampshire,HACU,Dance Studies Research Seminar,Lect,311,1,Lailye Weidman,10:30AM-01:30PM F
+Hampshire,HACU,Div III Studio Art Seminar,Lect,360,1,Serena Aurora Himmelfarb,01:00PM-04:30PM M
+Hampshire,IA,Writing About Food,Lect,111,1,Alejandro Cuellar,10:30AM-11:50AM TU;10:30AM-11:50AM TH
+Hampshire,IA,Introduction to Sculpture,Lect,119,1,Gregory Kline,01:00PM-03:50PM TU;01:00PM-03:50PM TH;01:00PM-03:50PM TU;01:00PM-03:50PM TH
+Hampshire,IA,"Concept, Process, and Practice",Lect,127,1,John Slepian,01:00PM-03:50PM TU;01:00PM-03:50PM TH
+Hampshire,IA,"Look Ma, No Hands",Lect,130,1,Donna Cohn,01:00PM-02:20PM M;01:00PM-02:20PM W
+Hampshire,IA,(Re)Telling the Tale,Lect,138,1,Djola Branner,10:30AM-11:50AM TU;10:30AM-11:50AM TH
+Hampshire,IA,Reading & Creating Comics,Lect,206,1,Uzma Khan,02:30PM-03:50PM TU;02:30PM-03:50PM TH
+Hampshire,IA,Thinking Inside the Box,Lect,212,1,Nathan McClain,01:00PM-02:20PM M;01:00PM-02:20PM W
+Hampshire,IA,Unreliable Narrators,Lect,249,1,Alejandro Cuellar,01:00PM-03:50PM W
+Hampshire,IA,Directg Contemp American Drama,Lect,251,1,Djola Branner,02:30PM-03:50PM TU;02:30PM-03:50PM TH
+Hampshire,IA,Object and Environment,Lect,257,1,Gregory Kline,09:30AM-11:50AM TU;09:30AM-11:50AM TH;09:30AM-11:50AM TU;09:30AM-11:50AM TH
+Hampshire,IA,Political Fictions: Joan Didio,Lect,266,1,William (Will) MacAdams,01:00PM-02:20PM M;01:00PM-02:20PM W
+Hampshire,IA,Soil Stories,Lect,269,1,William (Will) MacAdams,09:00AM-10:20AM M;09:00AM-10:20AM W
+Hampshire,IA,"River, Circle, Tableau",Lect,276,1,Thuy Le,02:30PM-05:20PM M
+Hampshire,IA,Leading Success for New Ventur,Lect,277,1,Bret Golann,01:00PM-03:50PM W
+Hampshire,IA,Emily Dickinson's Poetics,Lect,278,1,Thuy Le,10:30AM-11:50AM M;10:30AM-11:50AM W
+Hampshire,IA,Birds With Big Noses,Lect,279,1,Uzma Khan,02:30PM-05:20PM W
+Hampshire,NS,The Science of Space and Time,Lect,103,1,Kaca Bradonjic,09:00AM-10:20AM M;09:00AM-10:20AM W
+Hampshire,NS,Molecules of Farm and Forest,Lect,115,1,Rayane Moreira,10:30AM-11:50AM TU;10:30AM-11:50AM TH;01:00PM-04:00PM TU
+Hampshire,NS,Human Biology,Lect,121,1,Christopher Jarvis,01:00PM-02:20PM M;01:00PM-02:20PM W
+Hampshire,NS,Wild Yeast,Lect,136,1,Jason Tor,01:00PM-05:00PM W;01:00PM-05:00PM W
+Hampshire,NS,"Agriculture, Ecology, Society",Lect,150,1,Brian Schultz,01:00PM-02:20PM TU;01:00PM-02:20PM TH
+Hampshire,NS,Science of Stress,Lect,154,1,Cynthia Gill,09:00AM-10:20AM M;09:00AM-10:20AM W
+Hampshire,NS,Biotechnology,Lect,155,1,John Castorino,09:00AM-10:20AM M;09:00AM-10:20AM W;09:00AM-10:20AM M;09:00AM-10:20AM W
+Hampshire,NS,Physics I with Lab,Lect,204,1,Kaca Bradonjic,01:00PM-03:50PM M;01:00PM-03:50PM W
+Hampshire,NS,Ecology,Lect,207,1,Blair McLaughlin,01:00PM-02:20PM M;01:00PM-02:20PM W;02:30PM-03:50PM TU
+Hampshire,NS,Human Biological Variation,Lect,223,1,Alan Goodman,02:30PM-03:50PM M;02:30PM-03:50PM W
+Hampshire,NS,Cheese Microbiology,Lect,231,1,Jason Tor,02:30PM-03:50PM TU;05:00PM-09:00PM TU
+Hampshire,NS,Methods in Molecular Biology,Lect,235,1,John Castorino,02:30PM-05:20PM M;02:30PM-05:20PM M
+Hampshire,NS,Evolutionary Biology,Lect,241,1,Charles Ross,10:30AM-11:50AM TU;10:30AM-11:50AM TH;02:20PM-03:50PM TH
+Hampshire,NS,Animal Physiology,Lect,252,1,Cynthia Gill,01:00PM-03:50PM F
+Hampshire,NS,Epidemiology,Lect,275,1,Elizabeth Conlisk,10:30AM-11:50AM TU;10:30AM-11:50AM TH
+Hampshire,NS,Wild Yeast,Lect,336,1,Jason Tor,
+Hampshire,NS,Before and After Extinction,Lect,339,1,Charles Ross,10:30AM-11:59AM M;10:30AM-11:59AM W
+Hampshire,NS,Biotechnology,Lect,355,1,John Castorino,09:00AM-10:20AM M;09:00AM-10:20AM W;09:00AM-10:20AM M;09:00AM-10:20AM W
+Hampshire,NS,Advanced Ecology Practicum,Lect,387,1,Blair McLaughlin,01:00PM-03:50PM TH
+Hampshire,OPRA,Martial Arts: Karate Club,Lect,102,1,Samuel Kanner,08:00PM-09:30PM TU;08:00PM-09:30PM TH
+Hampshire,OPRA,Kickboxing,Lect,104,1,Samuel Kanner,11:00AM-12:00PM W;11:00AM-12:00PM F
+Hampshire,OPRA,Martial Arts: Aikido,Lect,113,1,Samuel Kanner,03:30PM-05:00PM TU;03:30PM-05:00PM TH
+Hampshire,OPRA,Martial Arts: JPN Archery Club,Lect,116,1,Samuel Kanner,06:00PM-07:45PM TU;06:00PM-07:45PM TH
+Hampshire,OPRA,Martial Arts: Iaido,Lect,117,1,Samuel Kanner,02:00PM-03:30PM TU;02:00PM-03:30PM TH
+Hampshire,OPRA,Outdoor Sampler,Lect,132,1,Michelle Lloyd-Dedischew,12:30PM-05:00PM F
+Hampshire,OPRA,Thru Hiking,Lect,144,1,Eric Nazar,12:30PM-05:30PM F
+Hampshire,OPRA,Top Rope Climbing,Lect,151,1,Michelle Lloyd-Dedischew,01:00PM-05:00PM TU
+Hampshire,OPRA,Lead Rock Climbing,Lect,156,1,Michelle Lloyd-Dedischew,01:00PM-05:00PM TU
+Hampshire,OPRA,Weight Training,Lect,174,1,Eric Nazar,09:00AM-10:00AM TU;09:00AM-10:00AM TH
+Hampshire,OPRA,Trail Maint. & Rest.,Lect,175,1,Eric Nazar,09:00AM-11:00AM F
+Hampshire,OPRA,Fundamentals of Tennis,Lect,185,1,James Morrell,12:00PM-01:00PM W
