@@ -1,10 +1,10 @@
-# Files needed (No need to download other files!)
+# Description about files_needed 
 * One main html file: ffc_scheduler.htm
 * Two js files: jquery-3.5.1.min.js, index.js
 * One css files: style.css
 
-# Explanation of how to open final.html
-1. Download "ffc_scheduler.htm", "jquery-3.5.1.min.js", and "index.js". Make sure that they are all in the same directory
+# Explanation of how to open the web
+1. Download all files in 'files_needed' folder: "ffc_scheduler.htm", "jquery-3.5.1.min.js", and "index.js". Make sure that all files are downloaded in the same directory
 2. Open "final.htm" with Chrome or other Internet browsers(I personally recommend Chrome)
 3. Click "Search" Button on the tab
 4. Choose the institution that you want to find the course using the select box. 
@@ -17,10 +17,16 @@
 
 # Purpose of this website
 College students in the past days used to use freecollegeschedulermaker.com to make their visual course scheduler.
+
 But this website was somewhat annoying to make a course schedule since its users are required to input all the information about each course(course title, days, times, instructor, location, etc)
-So Coursicle.com was developed. Unlike freecollegeschedulermaker, Coursicle's users don't need to input all those information one-by-one anymore; they only need to choose which institution they are attending because the website will automatically input all the other information about the courses.
+
+So Coursicle.com was developed. 
+Unlike freecollegeschedulermaker, Coursicle's users don't need to input all those information one-by-one anymore; they only need to choose which institution they are attending because the website will automatically input all the other information about the courses.
+
 However, as a student of Smith College which is the part of Five College Consortium, I felt uncomfortable using Coursicle since it allows users to choose only one institution.
+
 For students in five colleges who take at least one course in other neighboring institutions of Five college consortium, making a course scheduler was still boresome.
+
 So I'm developing this Five College Consortium Interactive Scheduler for letting five college students spend less time on making a scheduler.
 
 **Mount Holyoke hasn't released their course schedule
