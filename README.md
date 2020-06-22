@@ -1,10 +1,10 @@
 # Files needed (No need to download other files!)
-* One main html file: final.htm
+* One main html file: ffc_scheduler.htm
 * Two js files: jquery-3.5.1.min.js, index.js
 * One css files: style.css
 
 # Explanation of how to open final.html
-1. Download "final.htm", "jquery-3.5.1.min.js", and "index.js". Make sure that they are all in the same directory
+1. Download "ffc_scheduler.htm", "jquery-3.5.1.min.js", and "index.js". Make sure that they are all in the same directory
 2. Open "final.htm" with Chrome or other Internet browsers(I personally recommend Chrome)
 3. Click "Search" Button on the tab
 4. Choose the institution that you want to find the course using the select box. 
