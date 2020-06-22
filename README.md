@@ -1,9 +1,9 @@
-## Files needed
+# Files needed (No need to download other files!)
 * One main html file: final.htm
 * Two js files: jquery-3.5.1.min.js, index.js
 * One css files: style.css
 
-## Explanation of how to open final.html
+# Explanation of how to open final.html
 1. Download "final.htm", "jquery-3.5.1.min.js", and "index.js". Make sure that they are all in the same directory
 2. Open "final.htm" with Chrome or other Internet browsers(I personally recommend Chrome)
 3. Click "Search" Button on the tab
@@ -15,7 +15,7 @@
 8. Click "Submit" button on the top if you choose all the courses you want to take
 9. New window will pop up and show the courses that you selected and their information in table feature 
 
-## Purpose of this website
+# Purpose of this website
 College students in the past days used to use freecollegeschedulermaker.com to make their visual course scheduler.
 But this website was somewhat annoying to make a course schedule since its users are required to input all the information about each course(course title, days, times, instructor, location, etc)
 So Coursicle.com was developed. Unlike freecollegeschedulermaker, Coursicle's users don't need to input all those information one-by-one anymore; they only need to choose which institution they are attending because the website will automatically input all the other information about the courses.
@@ -37,7 +37,7 @@ For more specific information about each function, please refer to the inline co
 * Make a visually interactive scheduler like Coursicle
 * Add Mount Holyoke College
 
-## Description about dummy_files, crawled_data, crawling folders
+# Description about dummy_files, crawled_data, crawling folders
 * crawling: I crawled course information from the official five college consortium website: colleges.edu/academics/courses using crawling.py. Then I converted csv files(crawled_data) to html files(table feature) using csv_to_html.py
 * crawled.data: csv files and html files that I used to get <table> results of course information
 * dummy_files: files will be used in the future
