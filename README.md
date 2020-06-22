@@ -5,19 +5,18 @@
 ##   References: See the last part of this file
 ## ---------------------------------------------------------------------------------------
 
-## Files needed
+# Files needed
 1. One main html file: final.htm
 2. Two js files: jquery-3.5.1.min.js, index.js
 3. One css files: style.css
 
-## Description about dummy_files, crawled_data, crawling folders(No need to download!)
-1. crawling: I crawled course information from the official five college consortium website: colleges.edu/academics/courses using crawling.py. 
-             Then I converted csv files(crawled_data) to html files(table feature) using csv_to_html.py
+# Description about dummy_files, crawled_data, crawling folders
+1. crawling: I crawled course information from the official five college consortium website: colleges.edu/academics/courses using crawling.py. Then I converted csv files(crawled_data) to html files(table feature) using csv_to_html.py
 2. crawled.data: csv files and html files that I used to get <table> results of course information
 3. dummy_files: files will be used in the future
 
-## Explanation of how to open final.html
-1. Download "final.htm", "jquery.js", and "index.js". Make sure that they are all in the same directory
+# Explanation of how to open final.html
+1. Download "final.htm", "jquery-3.5.1.min.js", and "index.js". Make sure that they are all in the same directory
 2. Open "final.htm" with Chrome or other Internet browsers(I personally recommend Chrome)
 3. Click "Search" Button on the tab
 4. Choose the institution that you want to find the course using the select box. 
@@ -28,8 +27,7 @@
 8. Click "Submit" button on the top if you choose all the courses you want to take
 9. New window will pop up and show the courses that you selected and their information in table feature 
 
-
-## Purpose of this website
+# Purpose of this website
 College students in the past days used to use freecollegeschedulermaker.com to make their visual course scheduler.
 But this website was somewhat annoying to make a course schedule since its users are required to input all the information about each course(course title, days, times, instructor, location, etc)
 So Coursicle.com was developed. Unlike freecollegeschedulermaker, Coursicle's users don't need to input all those information one-by-one anymore; they only need to choose which institution they are attending because the website will automatically input all the other information about the courses.
@@ -39,11 +37,11 @@ So I'm developing this Five College Consortium Interactive Scheduler for letting
 
 **Mount Holyoke hasn't released their course schedule
 
-## Architecture of the code
+# Architecture of the code
 I used Pandas, BeautifulSoup, jQuery for better performance
 For more specific information about each function, please refer to the inline comments in each file.
 
-## Remaining Challenges:
+# Remaining Challenges:
 1. Loading Time for UMass courses
 2. How to export the result from search tab to schedule tab
 3. Import each course's credits from five college consortium website 
@@ -51,5 +49,5 @@ For more specific information about each function, please refer to the inline co
 5. Make a visually interactive scheduler like Coursicle
 6. Add Mount Holyoke College
 
-## References 
+# References 
 
