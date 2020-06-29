@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <script src="jquery-3.5.1.min.js"></script>
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/jquery.dataTables.min.js"></script>
+  <script src="js/dataTables.bootstrap.min.js"></script>
+  <script type ="text/javascript" src="js/bootstrap.min.js"></script>
+
   <!--connect css to html-->
-  <link rel ="stylesheet" type="text/css" href="style.css">
+  <link rel ="stylesheet" type="text/css" href="css/style.css">
+  <link rel ="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
   <meta name ="viewport" content="width=device-width,initial-scale=1">
   <style>
     body{font-family: Arial, Arial, Helvetica, sans-serif;
@@ -14,9 +20,10 @@
 </head>
 <body>
   <!--connect js to html-->
-  <script src ="index.js"></script>
+  <script src ="js/index.js"></script>
   <h1>Five College Consortium Scheduler</h1>
   <!-- tab links -->
+  <!-- Reference: https://www.w3schools.com/howto/howto_js_tabs.asp -->
   <div class = "tab">
     <button class ="tablinks" onclick="openTab(event, 'Search')">Search</button>
   </div>
@@ -24,18 +31,20 @@
   <div id ="Search" class ="tabcontent">
     <h3>Search Courses</h3>
       <div class = "topnav">
-        <select id = "schools">
+        <select id = "schools" class="form-control">
           <option value = "smith"> Smith</option>
           <option value = "amherst"> Amherst</option>
           <option value = "hampshire"> Hampshire</option>
           <option value = "umass"> UMass</option>
-          <script> select(); </script>
+          <script> selectSchool();</script>
         </select>
       </div>
         <div class = "content">
-        <button type = "submit" id="selectBtn">Submit</button>
+          
+          <!-- Reference: https://stackoverflow.com/questions/2975521/show-hide-div-based-on-select-option-jquery -->
+        <button type = "submit" class ="btn btn-success pull-right btn-lg" id="selectBtn">Submit</button>
         <div id = "hampshire" class = "table" style="display:none">  
-          <table border="1" class="dataframe">
+          <table border="1" class="table table-bordered table-striped">
     <thead>
       <tr style="text-align: left;">
         <th></th>
@@ -1110,8 +1119,8 @@
           </table>
         </div>
 
-        <div id = "smith" class = "table">  
-          <table border="1" class="dataframe">
+        <div id = "smith" class = "table" style="display:none">  
+          <table border="1" class="table table-bordered table-striped">
             <thead>
               <tr style="text-align: left;">
                 <th></th>
@@ -8391,7 +8400,7 @@
         </div>
         
         <div id = "amherst" class = "table" style="display:none">  
-        <table border="1" class="dataframe">
+        <table border="1" class="table table-bordered table-striped">
           <thead>
             <tr style="text-align: left;">
               <th></th>
@@ -15902,7 +15911,7 @@
         </div>
         
       <div id = "umass" class = "table" style="display:none">  
-          <table border="1" class="dataframe">
+          <table border="1" class="table table-bordered table-striped">
             <thead>
               <tr style="text-align: left;">
                 <th></th>
@@ -100213,8 +100222,10 @@
             </tbody>
           </table>
         </div>
-      </div>
-        <script>table();</script>
+        <script>
+        load();
+        selectCourses();
+        </script>
   </div>
 </body>
 </html>

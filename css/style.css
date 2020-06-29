@@ -1,3 +1,4 @@
+/* Reference: https://www.w3schools.com/howto/howto_js_tabs.asp */
 /* Style the tab */
 .tab {
     overflow: hidden;
@@ -106,4 +107,9 @@
     .topnav input[type=text] {
       border: 1px solid #ccc;  
     }
+  }
+  /* reference: https://www.geeksforgeeks.org/how-to-set-checkbox-size-in-html-css/ */
+  input.largerCheckbox{
+    width: 20px;
+    height: 20px;
   }

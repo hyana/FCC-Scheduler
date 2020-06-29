@@ -1,3 +1,4 @@
+// Reference: https://www.w3schools.com/howto/howto_js_tabs.asp
 function openTab(evt, tabName) {
   // Declare all variables
   var i, tabcontent, tablinks;
@@ -19,11 +20,40 @@ function openTab(evt, tabName) {
   evt.currentTarget.className += " active";
 }
 
+// show the table of selected school and hide the other schools' tables
+// reference: https://stackoverflow.com/questions/30429418/how-to-display-value-of-checkbox
+function selectSchool(){
+  $('#schools').change(function(){
+    $('.table').hide();
+    $('#' + $(this).val()).show();
+});
+}
 
-function table(){
+function load(){
+  //reference: https://stackoverflow.com/questions/30981765/how-to-divide-table-to-show-in-pages-the-table-data-is-filled-dynamically-with
+  $(function() {
+    $("table").dataTable({
+        "iDisplayLength": 10,
+        "aLengthMenu": [[10, 25, 50, 100,  -1], [10, 25, 50, 100, "All"]]
+       });
+      });
+    
   $('tbody > tr > th').replaceWith(function(){
-    return $("<th> <input type= \"checkbox\" / name = \"courses\">    &nbsp; </th>")
+    return $("<th> <input type= \"checkbox\" / name = \"courses\" class =\"largerCheckbox\">    &nbsp; </th>")
   });
+
+}
+
+function selectCourses(){
+  // replace indices of tables into checkboxes
+  // Reference for checkbox: https://stackoverflow.com/questions/11873711/i-want-to-add-a-check-box-beside-each-row-in-a-table-using-html/11873727
+
+  // $('tbody > tr > th').replaceWith(function(){
+  //   return $("<th> <input type= \"checkbox\" / name = \"courses\" class =\"largerCheckbox\">    &nbsp; </th>")
+  // });
+
+  // when user cliced submit button, make the array that can save course information
+  // reference for saving the checked courses: https://all-record.tistory.com/172
   $("#selectBtn").click(function(){
       var rowData = new Array();
       var inst = new Array();
@@ -35,14 +65,18 @@ function table(){
       var instr = new Array();
       var tim = new Array();
       var tdArr = new Array();
-
+      // when checkboxes are selected, save the information of each row in the above arrays
       var checkbox = $("input[name=courses]:checked");
 
+      // i means this function will be iterated by the number of checked(<tr>) boxes
       checkbox.each(function(i){
+        // if we go back to line #25, checkbox's parent is <th>, and <th>'s parent is <tr>
         var tr = checkbox.parent().parent().eq(i);
+        // and <td> is a children node of <tr>
         var td = tr.children();
         rowData.push(tr.text());
 
+        // find information about the course by column indices on the table and convert it to text
         var institution = td.eq(1).text();
         var subject = td.eq(2).text();
         var name = td.eq(3).text();
@@ -52,6 +86,7 @@ function table(){
         var instructor = td.eq(7).text();
         var time = td.eq(8).text();
 
+        // push information to array
         inst.push(institution)
         sub.push(subject);
         title.push(name);
@@ -65,6 +100,7 @@ function table(){
 });
 }
 
+// print out user's selection into table
 function result(inst, sub, title, typ, num, sec, instr, tim){
   document.write("<h3>Your Courses</h3>")
   document.write("<table border=\"1\" class=\"dataframe\">");
@@ -84,9 +120,3 @@ function result(inst, sub, title, typ, num, sec, instr, tim){
   document.write("</table>");
 }
 
-function select(){
-  $('#schools').change(function(){
-    $('.table').hide();
-    $('#' + $(this).val()).show();
-});
-}
