@@ -1,61 +1,55 @@
-// Reference: https://www.w3schools.com/howto/howto_js_tabs.asp
-function openTab(evt, tabName) {
-  // Declare all variables
-  var i, tabcontent, tablinks;
-
-  // Get all elements with class="tabcontent" and hide them
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-
-  // Get all elements with class="tablinks" and remove the class "active"
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-
-  // Show the current tab, and add an "active" class to the button that opened the tab
-  document.getElementById(tabName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-
 // show the table of selected school and hide the other schools' tables
-// reference: https://stackoverflow.com/questions/30429418/how-to-display-value-of-checkbox
+// Reference: http://jsfiddle.net/FvMYz/6587/
 function selectSchool(){
-  $('#schools').change(function(){
-    $('.table').hide();
-    $('#' + $(this).val()).show();
-});
-}
+    $('#schools').on('change', function() {
+      if ( this.value == 'smith')
+      {
+        $("#smith").show();
+        $("#hampshire").hide();
+        $("#amherst").hide();
+        $("#umass").hide();
+      }
+      
+      if ( this.value == 'hampshire')
+      {
+        $("#hampshire").show();
+        $("#smith").hide();
+        $("#amherst").hide();
+        $("#umass").hide();
+      }
+      
+      if ( this.value == 'amherst')
+      {
+        $("#amherst").show();
+        $("#hampshire").hide();
+        $("#smith").hide();
+        $("#umass").hide();
+      }
+      if ( this.value == 'umass')
+      {
+        $("#umass").show();
+        $("#hampshire").hide();
+        $("#amherst").hide();
+        $("#smith").hide();
+      }
+     });
+  }
 
 function load(){
-  //reference: https://stackoverflow.com/questions/30981765/how-to-divide-table-to-show-in-pages-the-table-data-is-filled-dynamically-with
-  $(function() {
-    $("table").dataTable({
-        "iDisplayLength": 10,
-        "aLengthMenu": [[10, 25, 50, 100,  -1], [10, 25, 50, 100, "All"]]
-       });
-      });
-    
   $('tbody > tr > th').replaceWith(function(){
-    return $("<th> <input type= \"checkbox\" / name = \"courses\" class =\"largerCheckbox\">    &nbsp; </th>")
+    return $("<th> <input type= \"checkbox\" / class =\"largerCheckbox\" name = \"check\"> &nbsp; </th>")
   });
 
-}
-
-function selectCourses(){
+  //reference: https://stackoverflow.com/questions/30981765/how-to-divide-table-to-show-in-pages-the-table-data-is-filled-dynamically-with
+  $(document).ready(function() {
+    var table = $("table").DataTable({
+        "iDisplayLength": 10,
+        "aLengthMenu": [[10, 25, 50, 100,  -1], [10, 25, 50, 100, "All"]]
+      });
+  
   // replace indices of tables into checkboxes
   // Reference for checkbox: https://stackoverflow.com/questions/11873711/i-want-to-add-a-check-box-beside-each-row-in-a-table-using-html/11873727
-
-  // $('tbody > tr > th').replaceWith(function(){
-  //   return $("<th> <input type= \"checkbox\" / name = \"courses\" class =\"largerCheckbox\">    &nbsp; </th>")
-  // });
-
-  // when user cliced submit button, make the array that can save course information
-  // reference for saving the checked courses: https://all-record.tistory.com/172
-  $("#selectBtn").click(function(){
-      var rowData = new Array();
+    $("#submitBtn").click(function(){
       var inst = new Array();
       var sub = new Array();
       var title = new Array();
@@ -64,19 +58,17 @@ function selectCourses(){
       var sec = new Array();
       var instr = new Array();
       var tim = new Array();
-      var tdArr = new Array();
-      // when checkboxes are selected, save the information of each row in the above arrays
-      var checkbox = $("input[name=courses]:checked");
 
-      // i means this function will be iterated by the number of checked(<tr>) boxes
+      /* Reference for checking checkboxes across multiple pages: https://www.gyrocode.com/articles/jquery-datatables-how-to-add-a-checkbox-column/
+      https://datatables.net/forums/discussion/36866/unable-to-remember-checkboxes-across-pages
+      */
+      var checkbox = table.$("input[type=checkbox]");
       checkbox.each(function(i){
-        // if we go back to line #25, checkbox's parent is <th>, and <th>'s parent is <tr>
+      // Reference: https://stackoverflow.com/questions/36217098/checkboxes-only-work-on-first-page-datatables-rails
+      if(this.checked){
         var tr = checkbox.parent().parent().eq(i);
-        // and <td> is a children node of <tr>
         var td = tr.children();
-        rowData.push(tr.text());
 
-        // find information about the course by column indices on the table and convert it to text
         var institution = td.eq(1).text();
         var subject = td.eq(2).text();
         var name = td.eq(3).text();
@@ -85,8 +77,7 @@ function selectCourses(){
         var section = td.eq(6).text();             
         var instructor = td.eq(7).text();
         var time = td.eq(8).text();
-
-        // push information to array
+        
         inst.push(institution)
         sub.push(subject);
         title.push(name);
@@ -94,29 +85,41 @@ function selectCourses(){
         num.push(number);
         sec.push(section);
         instr.push(instructor);
-        tim.push(time);        
-  });
+        tim.push(time);
+      }
+  }); 
   result(inst, sub, title, typ, num, sec, instr, tim);
+  });
 });
 }
 
 // print out user's selection into table
 function result(inst, sub, title, typ, num, sec, instr, tim){
-  document.write("<h3>Your Courses</h3>")
-  document.write("<table border=\"1\" class=\"dataframe\">");
-  document.write("<thead> <tr style=\"text-align: left;\"> <tr> <th>Institution</th> <th>Subject</th> <th>Title</th> <th>Type</th> <th>Number</th> <th>Section</th> <th>Instructor</th> <th>Date</th> </tr>");
-  for(i = 0; i < inst.length; i++){
-    document.write("<tr>");
-      document.write("<td>" + inst[i] + "</td>");
-      document.write("<td>" + sub[i] + "</td>");
-      document.write("<td>" + title[i] + "</td>");
-      document.write("<td>" + typ[i] + "</td>");
-      document.write("<td>" + num[i] + "</td>");
-      document.write("<td>" + sec[i] + "</td>");
-      document.write("<td>" + instr[i] + "</td>");
-      document.write("<td>" + tim[i] + "</td>");
-    document.write("</tr>");
+  $("#resultBody").empty();
+    for(var i = 0; i < inst.length; i++){
+        $("#resultBody").append("<tr>");
+        $("#resultBody").append("<td> <input type= \"checkbox\" / class =\"largerCheckbox\" name = \"courses\"> &nbsp; </td>");
+        $("#resultBody").append("<td>" + inst[i] + "</td>");
+        $("#resultBody").append("<td>" + sub[i] + "</td>");
+        $("#resultBody").append("<td>" + title[i] + "</td>");
+        $("#resultBody").append("<td>" + typ[i] + "</td>");
+        $("#resultBody").append("<td>" + num[i] + "</td>");
+        $("#resultBody").append("<td>" + sec[i] + "</td>");
+        $("#resultBody").append("<td>" + instr[i] + "</td>");
+        $("#resultBody").append("<td>" + tim[i] + "</td>");
+        $("#resultBody").append("</tr>");
+    }
   }
-  document.write("</table>");
-}
 
+function remove(){
+    $("#removeBtn").click(function(){
+      var checkbox = $("input[name=courses]:checked");
+      checkbox.each(function(){
+        $("#resultBody checkbox").parents("tr").remove();
+    });
+  });
+
+    $("#resetBtn").click(function(){
+      $("#resultBody").empty();
+    });
+}

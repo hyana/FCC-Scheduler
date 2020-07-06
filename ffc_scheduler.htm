@@ -1,36 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name ="viewport" content="width=device-width,initial-scale=1">
+
   <script src="js/jquery-3.5.1.min.js"></script>
   <script src="js/jquery.dataTables.min.js"></script>
   <script src="js/dataTables.bootstrap.min.js"></script>
-  <script type ="text/javascript" src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script type ="text/javascript" src ="js/index.js"></script>
 
   <!--connect css to html-->
   <link rel ="stylesheet" type="text/css" href="css/style.css">
-  <link rel ="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel ="stylesheet" href="css/bootstrap.min.css">
 
-  <meta name ="viewport" content="width=device-width,initial-scale=1">
   <style>
     body{font-family: Arial, Arial, Helvetica, sans-serif;
     margin: 0;}
     *{box-sizing: border-box;}
   </style>
+
   <title> Five College Consortium Scheduler </title>
 </head>
+
 <body>
-  <!--connect js to html-->
-  <script src ="js/index.js"></script>
+  <div class = "container">
   <h1>Five College Consortium Scheduler</h1>
   <!-- tab links -->
   <!-- Reference: https://www.w3schools.com/howto/howto_js_tabs.asp -->
-  <div class = "tab">
-    <button class ="tablinks" onclick="openTab(event, 'Search')">Search</button>
-  </div>
+    <!-- <button class ="tablinks" onclick="openTab(event, 'Search')" id = "defaultOpen">Search</button>
+    <button class ="tablinks" onclick="openTab(event, 'Schedule')">Schedule</button> -->
+    <ul class ="nav nav-tabs">
+    <li class="nav-item"><a class = "nav-link active" href="#search" data-toggle="tab">Search</a></li>
+    <li class="nav-item"><a class = "nav-link" href="#schedule" data-toggle="tab">Schedule</a></li>
+    </ul>
 
-  <div id ="Search" class ="tabcontent">
+  <div class ="tab-content">
+    <div class = "tab-pane fade in active" id = "search">
     <h3>Search Courses</h3>
-      <div class = "topnav">
         <select id = "schools" class="form-control">
           <option value = "smith"> Smith</option>
           <option value = "amherst"> Amherst</option>
@@ -38,11 +44,9 @@
           <option value = "umass"> UMass</option>
           <script> selectSchool();</script>
         </select>
-      </div>
         <div class = "content">
-          
           <!-- Reference: https://stackoverflow.com/questions/2975521/show-hide-div-based-on-select-option-jquery -->
-        <button type = "submit" class ="btn btn-success pull-right btn-lg" id="selectBtn">Submit</button>
+        <button type = "submit" class ="btn btn-success pull-right btn-lg" id="submitBtn">Submit</button>
         <div id = "hampshire" class = "table" style="display:none">  
           <table border="1" class="table table-bordered table-striped">
     <thead>
@@ -100224,8 +100228,36 @@
         </div>
         <script>
         load();
-        selectCourses();
         </script>
+      </div>
+    </div>
+  <div id ="schedule" class ="tab-pane fade">
+    <h3>Course Scheduler</h3>
+    <table border="1" class="table table-bordered table-striped">
+      <thead> 
+        <tr style="text-align: left"> 
+          <tr> 
+            <th> </th> 
+            <th>Institution</th> 
+            <th>Subject</th> 
+            <th>Title</th> 
+            <th>Type</th> 
+            <th>Number</th> 
+            <th>Section</th> 
+            <th>Instructor</th> 
+            <th>Date</th> 
+          </tr>
+      </thead>
+      <tbody id = "resultBody">
+      </tbody>
+    </table>
+    <button type = "button" class ="btn btn-warning pull-right btn-lg" id="removeBtn">Remove</button>
+    <button type = "button" class ="btn btn-danger pull-right btn-lg" id="resetBtn">Reset</button>
+    <script>
+    remove();
+    </script>
   </div>
+</div>
+</div>
 </body>
 </html>
